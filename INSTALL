@@ -1,0 +1,59 @@
+========================================
+    Blueport Operating System
+  -------------------------------------
+           Il nuovo sistema operativo
+========================================
+
+Sommario
+
+1. Dove trovare Blueport
+2. Compilare Blueport
+3. Provare Blueport
+
+========================================
+
+1. Dove trovare Blueport
+
+All'indirizzo http://www.blueportos.org, il sito ufficiale
+di Blueport, troverai i sorgenti dell'ultima release del
+sistema operativo e non solo: vai nella sezione download!
+
+========================================
+
+2. Compilare Blueport
+
+Per compilare Blueport, dovrai prima di tutto estrarre i file
+dell'archivio da qualche parte:
+
+cd <cartella>
+tar -xjf bpkernel-x.x.x-x.x.x.tar.bz2
+-oppure-
+tar -xzf bpkernel-x.x.x-x.x.x.tar.gz
+
+in caso di pacchetto bz2 o gz. Le varie 'x' sono i numeri di
+versione della release che hai scaricato.
+A questo punto entra nella cartella appena creata e avvia la
+compilazione:
+
+cd kernel/
+make clean
+make
+
+========================================
+
+3. Provare Blueport
+
+Nella stessa cartella troverai il file 'bpkernel', che dovrai avviare
+per mezzo di un bootloader Multiboot come ad esempio GRUB:
+
+grub> kernel (hd0,0)/boot/bpkernel
+
+sostituisci '(hd0,0)/boot/bpkernel' con il disco, la partizione ed
+il percorso completo del file del kernel appena compilato.
+
+========================================
+
+Per qualsiasi informazione scrivete a: webmaster@blueportos.org
+Buon divertimento!
+    The Blueport Main Programmer
+     daniele_athome

@@ -1,0 +1,40 @@
+========================================
+    Blueport Operating System
+  -------------------------------------
+           Il nuovo sistema operativo
+========================================
+
+Blueport è il nuovo sistema operativo a 32 bit creato e sviluppato
+principalmente da daniele_athome. Creato fondamentalmente per
+imparare i concetti dell'OSDev e per vedere un proprio sistema
+operativo avviato su una macchina oltre a Linux e a Windows,
+Blueport è ancora in uno stato embrionale, ma è utile per poter
+imparare qualcosa o per curiosare tra le caratteristiche ed i
+funzionamenti profondi di una macchina Intel.
+
+Per ora esistono 2 release di Blueport:
+
+0.1 -- è la vecchia versione a cui lavorava solo daniele_athome,
+scritta per cominciare ad imparare a scrivere un sistema operativo.
+Supporta multitasking, tastiera, speaker, pit, pic/irq/idt, memoria
+fisica, seriale, parallela, video ed una piccola shell. Comunque
+per questa release è più il codice copiato da altri sistemi operativi
+che quello scritto da daniele_athome :)
+
+0.2 -- questa invece è la nuova versione di Blueport a cui lavorano
+tutti quanti: è stata ricominciata interamente da capo, ma soprattutto
+senza copiare niente da nessuno (solo alcune macro sono state "prese
+in prestito" dal kernel di Linux 0.0.1 :)
+Per ora supporta un avanzato sistema di gestione della memoria
+(niente a che vedere con il gestore della memoria della 0.1) e basta
+ma lo sviluppo procede velocemente. Questo kernel è multiboot, il
+che significa che è avviabile solamente da un bootloader come GRUB.
+Ben presto saranno supportati filesystem, eseguibili, multitasking
+e molto hardware.
+
+========================================
+
+Per qualsiasi informazione scrivete a: webmaster@blueportos.org
+Buon divertimento!
+    The Blueport Main Programmer
+     daniele_athome

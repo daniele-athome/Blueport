@@ -1,0 +1,6 @@
+*** initfs.c:198: ricerca manuale
+* MUTUA ESCLUSIONE!!!!!!!!
+* rifare path.c/path.h per manipolazione e controllo path
+* fare sys.c per syscall a richiesta
+* progettare sistema dei driver
+* visualizzare un pò meglio la memory map
